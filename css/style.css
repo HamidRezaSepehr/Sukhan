@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/material-design-icons/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url('../font/material-design-icons/MaterialIcons-Regular.woff2') format('woff2'),
+       url('../font/material-design-icons/MaterialIcons-Regular.woff') format('woff'),
+       url('../font/material-design-icons/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body {direction: rtl;background: yellow;font-family: 'b yekan';}
+strong {font-weight: 700;}
+/*.quote-body {background-color: rgba(0,0,0,.2);border-radius: 10px;padding: 10px;color: white;}*/
+.quote-body:before {}
+.quote-body p {padding-right: 10px;border-right: 5px solid black;}
+.quote-author h1 {font-size: 12px;margin: 0;}
+.quote-author {text-align: center;position: absolute;left: 50px;bottom: -100px;}
+.quote {position: relative;}
+.quote p q {font-size: 41px;}
+.quote p q:before {content: '';}
+.quote-icon {font-size: 155px;}
+
+.refresh {position: relative;display: inline-block;	}
+.refresh i {
+	position: absolute;
+	top: 21px;
+	left: 21px;
+	font-size: 18px;
+	/*border: 1px solid;*/
+	padding: 10px;
+	border-radius: 50%;
+	-webkit-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+.refresh a {
+	color: rgba(0,0,0,.3);
+}
+.refresh a:hover {
+	color: rgba(0,0,0,1);
+}
+
+.refresh a:hover i {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.cp-wrapper {
+	position: fixed;
+	left: -240px;
+	bottom: -140px;
+	direction: ltr;
+	font-family: sans-serif;
+	border:1px solid;
+	display: inline-block;
+	background: white;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	width: 400px;
+	height: 200px;
+	text-align: center;
+	-webkit-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+	
+}
+.cp-wrapper:hover {
+	left: -200px;
+	bottom: -100px;
+}
+.cp-icon {margin-bottom: 50px;}
+.cp-icon, .cp-info {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
