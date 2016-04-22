@@ -80,7 +80,6 @@ strong {font-weight: 700;}
 	bottom: -140px;
 	direction: ltr;
 	font-family: sans-serif;
-	border:1px solid;
 	display: inline-block;
 	background: white;
 	-webkit-transform: rotate(45deg);
@@ -99,11 +98,19 @@ strong {font-weight: 700;}
 	left: -200px;
 	bottom: -100px;
 }
+.cp-wrapper:hover .cp-info {
+	margin-left: 20px;
+	margin-top: -40px;
+}
 .cp-icon {margin-bottom: 50px;}
 .cp-icon, .cp-info {
 	-webkit-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+
+	-webkit-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
 }
 
