@@ -131,12 +131,24 @@ strong {font-weight: 700;}
 	opacity: 0;
 }
 
-.share-icon {text-align: center;display: inline-block;}
-.share {display: inline-block;}
+.share-icon {
+	text-align: center;
+	display: inline-block;
+	-webkit-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+.share, .share-holder {display: inline-block;}
 .share-holder:hover .share i {
 	-webkit-transform: translateY(0px);
 	-ms-transform: translateY(0px);
 	-o-transform: translateY(0px);
 	transform: translateY(0px);
 	opacity: 1;
+}
+.share-holder:hover .share-icon {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
 }
