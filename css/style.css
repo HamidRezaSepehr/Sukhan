@@ -13,4 +13,10 @@ main.main {padding: 4em 0px;}
 q:before {content: '';}
 .quote-body {font-size: 38px;}
 .quote-author h1 {font-size: 12px;margin: 0;}
-.social_share i {border:1px solid black;width: 30px;height: 30px;padding-top: 7px;}
+.social_share i:before {
+	content: '';
+	border:1px solid black;
+	width: 30px;
+	height: 30px;
+	padding-top: 7px;
+}
