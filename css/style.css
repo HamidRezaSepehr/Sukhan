@@ -6,3 +6,11 @@
 body {direction: rtl;}
 strong {font-weight: 700;}
 .row .col {float: right;}
+
+main.main {padding: 4em 0px;}
+.slide_no {font-size: 25px;}
+.current_slide {font-size: 65px;}
+q:before {content: '';}
+.quote-body {font-size: 38px;}
+.quote-author h1 {font-size: 12px;margin: 0;}
+.social_share i {border:1px solid black;width: 30px;height: 30px;padding-top: 7px;}
