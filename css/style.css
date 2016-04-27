@@ -13,10 +13,21 @@ main.main {padding: 4em 0px;}
 q:before {content: '';}
 .quote-body {font-size: 38px;}
 .quote-author h1 {font-size: 12px;margin: 0;}
-.social_share i:before {
-	content: '';
+.social_share i {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.social_share span {
+	display: inline-block;
 	border:1px solid black;
+	padding: 4px;
 	width: 30px;
 	height: 30px;
-	padding-top: 7px;
+	margin: 5px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
