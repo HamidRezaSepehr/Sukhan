@@ -17,9 +17,9 @@
 		<main class="main">
 			<div class="container">
 				<div class="row">
-					<div class="col m2">
-						<i class="fa fa-fw fa-angle-right"></i>
-						<i class="fa fa-fw fa-angle-left"></i>
+					<div class="col m2 slide_nav">
+						<i class="fa fa-3x fa-angle-right"></i>
+						<i class="fa fa-3x fa-angle-left"></i>
 						<div class="slide_no">
 							<span class="current_slide">13</span>/69
 						</div>
@@ -44,13 +44,27 @@
 				</div>
 			</div>
 		</main>
-		<footer></footer>
+		<footer>
+			<div class="icon_bar">
+				<a href="javascript:void();" id=""><i class="fa fa-fw fa-gears"></i></a>
+				<a href="javascript:void();" id=""><i class="fa fa-fw fa-gears"></i></a>
+			</div>
+			<div class="footer_bar">
+				<span class="close_footer"><i class="fa fa-fw fa-times"></i></span>
+				This is footer bar.
+			</div>
+		</footer>
 
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<!--<script type="text/javascript" src="js/materialize.min.js"></script>-->
 		<script type="text/javascript">
 			$(document).ready(function(){
-
+				$('.icon_bar i').on('click', function(){
+					$('.footer_bar').addClass('active');
+				});
+				$('main, .close_footer').on('click', function(){
+					$('.footer_bar').removeClass('active');
+				});
 			});
 		</script>
 	</body>
