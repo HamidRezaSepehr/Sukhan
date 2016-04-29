@@ -74,3 +74,4 @@ footer .icon_bar i {margin: 0px 10px;}
 	transition: all 400ms ease;
 }
 .footer_bar.active {bottom: 0;}
+.cp {font-size: 12px;font-family: sans-serif;display: inline-block;direction: ltr;}

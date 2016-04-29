@@ -46,9 +46,9 @@
 		</main>
 		<footer>
 			<div class="icon_bar">
-				<a href="javascript:void();" id=""><i class="fa fa-fw fa-copyright"></i></a>
-				<a href="javascript:void();" id=""><i class="fa fa-fw fa-fire"></i></a>
-				<a href="javascript:void();" id=""><i class="fa fa-fw fa-github-alt"></i></a>
+				<p class="cp"><i class="fa fa-copyright"></i> 2015</p>
+				<a href="javascript:void();" id="credit"><i class="fa fa-fw fa-fire"></i></a>
+				<a href="#" target="_blank"><i class="fa fa-fw fa-github-alt"></i></a>
 			</div>
 			<div class="footer_bar">
 				<span class="close_footer"><i class="fa fa-fw fa-3x fa-times"></i></span>
@@ -60,7 +60,7 @@
 		<!--<script type="text/javascript" src="js/materialize.min.js"></script>-->
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$('.icon_bar i').on('click', function(){
+				$('#credit').on('click', function(){
 					$('.footer_bar').addClass('active');
 				});
 				$('main, .close_footer').on('click', function(){
